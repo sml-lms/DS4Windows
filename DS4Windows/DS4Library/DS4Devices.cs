@@ -131,6 +131,7 @@ namespace DS4Windows
         internal const int SONY_VID = 0x054C;
         internal const int RAZER_VID = 0x1532;
         internal const int NACON_VID = 0x146B;
+        internal const int NACON_VID2 = 0x3285;
         internal const int HORI_VID = 0x0F0D;
         internal const int NINTENDO_VENDOR_ID = 0x57e;
         internal const int SWITCH_PRO_PRODUCT_ID = 0x2009;
@@ -168,6 +169,8 @@ namespace DS4Windows
             new VidPidInfo(NACON_VID, 0x0D10, "Nacon Revol Infinite"), // Nacon Revolution Infinite (sometimes known as Revol Unlimited Pro v2?). Touchpad, gyro, rumble, "led indicator" lightbar.
             new VidPidInfo(HORI_VID, 0x0084, "Hori Fighting Cmd"), // Hori Fighting Commander (special kind of gamepad without touchpad or sticks. There is a hardware switch to alter d-pad type between dpad and LS/RS)
             new VidPidInfo(NACON_VID, 0x0D13, "Nacon Revol Pro v.3"),
+            new VidPidInfo(NACON_VID2, 0x0D17, "REVOLUTION 5 PRO as PS4"), // Nacon Revolution 5 Pro PS4
+            new VidPidInfo(NACON_VID2, 0x0D19, "REVOLUTION 5 PRO as PS5", InputDeviceType.DualSense, VidPidFeatureSet.DefaultDS4, DualSenseDevice.DetermineConnectionType), // Nacon Revolution 5 Pro PS5
             new VidPidInfo(HORI_VID, 0x0055, "Horipad 4 FPS", InputDeviceType.DS4, VidPidFeatureSet.NoGyroCalib), // Horipad 4 FPS (wired only.)
             new VidPidInfo(HORI_VID, 0x0066, "Horipad FPS Plus", InputDeviceType.DS4, VidPidFeatureSet.NoGyroCalib), // Horipad FPS Plus (wired only. No light bar, rumble and Gyro/Accel sensor. Cannot Hide "HID-compliant vendor-defined device" in USB Composite Device. Other feature works fine.)
             new VidPidInfo(0x9886, 0x0025, "Astro C40", InputDeviceType.DS4, VidPidFeatureSet.NoGyroCalib), // Astro C40 (wired and BT. Works if Astro specific xinput drivers haven't been installed. Uninstall those to use the pad as dinput device)

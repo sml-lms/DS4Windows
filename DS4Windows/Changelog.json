@@ -1,9 +1,29 @@
 {
-  "latest_version": "3.3.3",
+  "latest_version": "3.3.3.1",
   "latest_version_number_info": {"majorPart": 3, "minorPart": 3, "buildPart": 3},
-  "updated_at": "2023-12-31T07:01:07+0000",
+  "updated_at": "2025-09-17T07:01:07+0000",
   "changelog": {
     "versions": [
+      {
+      "version_str": "3.3.3.1",
+      "version_number_info": {"majorPart": 3, "minorPart": 3, "buildPart": 3},
+      "base_header": "Version 3.3.3.1",
+      "release_date": "2025-09-17T07:01:07+0000",
+      "locales": [
+        {
+          "code": "en",
+          "header": "Version 3.3.3.1",
+          "log_text": ["* Added Nacon Revolution Pro 5 DS4 & DS5 Mode",
+            "* Update Portuguese translation. Contribution by **Denellyne**",
+            "* Close ProfileMigration instances in unit tests when finished",
+            "* Removed unused Net8NoticeWindow class",
+            "* Fixed Jays2Kings stick dead zone migration check. Carry over non-zero dead zone choice"],
+          "editor": "ryochan7",
+          "editors_note": ["Unit tests really helped here"],
+          "updated_at": "2023-12-31T07:01:07+0000"
+        }
+      ]
+    },
     {
       "version_str": "3.3.3",
       "version_number_info": {"majorPart": 3, "minorPart": 3, "buildPart": 3},
